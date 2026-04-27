@@ -1,6 +1,6 @@
 {
-  "scored_at": "2026-04-27T06:45:15",
-  "pool_refreshed_at": "2026-04-27T06:45:12",
+  "scored_at": "2026-04-27T06:55:55",
+  "pool_refreshed_at": "2026-04-27T06:55:52",
   "pool_size": 66,
   "market_context": {
     "BIST": {
@@ -17,7 +17,7 @@
       "last": 7165.080078125,
       "sma50": 6789.265205078125
     },
-    "computed_at": "2026-04-27T06:45:15"
+    "computed_at": "2026-04-27T06:55:55"
   },
   "rows": [
     {
@@ -340,10 +340,10 @@
         "momentum": 6
       },
       "action": "WATCH",
-      "vol_multiplier": 3.86,
-      "today_close": 619.5,
-      "today_vol": 197052.0,
-      "pct_to_pivot": -2.44,
+      "vol_multiplier": 3.87,
+      "today_close": 618.75,
+      "today_vol": 197233.0,
+      "pct_to_pivot": -2.56,
       "stop": 603.48,
       "t1": 666.52,
       "t2": 698.03,
@@ -461,9 +461,9 @@
       },
       "action": "WATCH",
       "vol_multiplier": 3.07,
-      "today_close": 467.0,
-      "today_vol": 458610.0,
-      "pct_to_pivot": -2.15,
+      "today_close": 466.75,
+      "today_vol": 458650.0,
+      "pct_to_pivot": -2.2,
       "stop": 462.22,
       "t1": 492.28,
       "t2": 507.3,
@@ -501,9 +501,9 @@
       },
       "action": "MONITOR",
       "vol_multiplier": 2.27,
-      "today_close": 96.31999969482422,
-      "today_vol": 930566.0,
-      "pct_to_pivot": -19.38,
+      "today_close": 96.19999694824219,
+      "today_vol": 930972.0,
+      "pct_to_pivot": -19.48,
       "stop": 104.57,
       "t1": 134.39,
       "t2": 149.3,
@@ -1192,10 +1192,10 @@
         "momentum": 6
       },
       "action": "MONITOR",
-      "vol_multiplier": 63.39,
-      "today_close": 6.0320000648498535,
-      "today_vol": 118055.0,
-      "pct_to_pivot": -7.31,
+      "vol_multiplier": 63.43,
+      "today_close": 6.033999919891357,
+      "today_vol": 118121.0,
+      "pct_to_pivot": -7.28,
       "stop": 6.29,
       "t1": 6.73,
       "t2": 6.94,
@@ -2405,9 +2405,9 @@
       },
       "action": "PASS",
       "vol_multiplier": 0.62,
-      "today_close": 0.32362890243530273,
-      "today_vol": 377909056.0,
-      "pct_to_pivot": -12.48,
+      "today_close": 0.32375872135162354,
+      "today_vol": 378234304.0,
+      "pct_to_pivot": -12.45,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
