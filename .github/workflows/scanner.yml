@@ -1,0 +1,106 @@
+name: Mr Burki Tarama Scanner
+
+on:
+  schedule:
+    # Daily refresh: 06:30 UTC (09:30 TR) Mon-Fri
+    - cron: '30 6 * * 1-5'
+    # Hourly: every hour 07:00-19:00 UTC Mon-Fri (covers BIST + US sessions)
+    - cron: '0 7-19 * * 1-5'
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'hisseler.txt'
+      - '*.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scanner
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      SCANNER_BASE: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Restore yfinance cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: yf-cache-${{ github.run_id }}
+          restore-keys: |
+            yf-cache-
+
+      - name: Decide mode (daily vs hourly)
+        id: mode
+        run: |
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" = "06" ] || [ ! -f cache/candidate_pool.json ]; then
+            echo "mode=daily" >> $GITHUB_OUTPUT
+          else
+            echo "mode=hourly" >> $GITHUB_OUTPUT
+          fi
+          echo "Selected mode: $(grep mode= $GITHUB_OUTPUT)"
+
+      - name: Daily refresh
+        if: steps.mode.outputs.mode == 'daily'
+        run: python run_daily.py
+
+      - name: Hourly scan
+        if: steps.mode.outputs.mode == 'hourly'
+        run: python run_hourly.py --force
+
+      - name: Build dashboard HTML
+        run: python build_pages.py
+
+      - name: Commit results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/index.html cache/scored_results.json cache/candidate_pool.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Scan: $(date -u +%Y-%m-%dT%H:%MZ) [${{ steps.mode.outputs.mode }}]"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

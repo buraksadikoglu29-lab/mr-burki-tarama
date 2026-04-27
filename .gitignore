@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.log
+logs/
+exports/
+cache/*.pkl
+cache/last_strong_set.json
+cache/snapshot_min.json
+.idea/
+.vscode/

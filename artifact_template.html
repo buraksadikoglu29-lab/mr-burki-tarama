@@ -1,0 +1,387 @@
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Scanner Top50",
+  "schemaVersion": 1,
+  "description": "Mr Burki Tarama — saatlik breakout scanner. BIST + ABD + crypto + futures + indices üzerinde O'Neil/Minervini/Weinstein hard filters + scoring + action layer. Veri ~/Desktop/piyasalar/cache JSON'larından okunur, butonlar lokal Python script'lerini Desktop Commander MCP ile tetikler.",
+  "mcpTools": [],
+  "mcpServerNames": []
+}
+</script>
+<html lang="tr"><head><meta charset="UTF-8"><title>Mr Burki Tarama</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 14px; background: #fff; color: #1a1a1a; font-size: 13px; line-height: 1.45; }
+h1 { font-size: 18px; margin: 0 0 2px; font-weight: 500; }
+.sub { color: #777; font-size: 11px; }
+.header { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 10px; border-bottom: 1px solid #eee; gap: 16px; flex-wrap: wrap; }
+.badges { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border-radius: 6px; font-size: 11px; font-weight: 500; border: 1px solid; }
+.badge .lbl { color: #555; font-weight: 400; }
+.badge.healthy { background: #e8f5e9; color: #2e7d32; border-color: #c8e6c9; }
+.badge.defensive { background: #ffebee; color: #c62828; border-color: #ffcdd2; }
+.badge.gray { background: #f5f5f5; color: #555; border-color: #e0e0e0; }
+.controls { display: flex; flex-direction: column; gap: 8px; padding: 10px 0; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.chip { padding: 4px 10px; font-size: 11px; border-radius: 12px; border: 1px solid #d0d0d0; background: #fafafa; cursor: pointer; user-select: none; }
+.chip:hover { background: #f0f0f0; }
+.chip.active { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+.chip.act-strong.active { background: #2e7d32; border-color: #2e7d32; }
+.chip.act-buy.active { background: #43a047; border-color: #43a047; }
+.chip.act-prime.active { background: #fb8c00; border-color: #fb8c00; }
+.chip.act-watch.active { background: #ffb300; border-color: #ffb300; }
+.chip.act-monitor.active { background: #757575; border-color: #757575; }
+input[type=text] { padding: 6px 10px; border: 1px solid #d0d0d0; border-radius: 6px; font-size: 12px; background: #fff; width: 180px; }
+.btn { padding: 6px 12px; border: 1px solid #d0d0d0; background: #fff; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 500; }
+.btn:hover { background: #f0f0f0; }
+.btn.primary { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+.btn.primary:hover { background: #1557b0; }
+.table-wrap { overflow-x: auto; margin-top: 10px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eee; white-space: nowrap; }
+th { font-weight: 500; color: #666; background: #fafafa; cursor: pointer; user-select: none; position: sticky; top: 0; }
+th:hover { background: #f0f0f0; }
+th.sort-asc::after { content: " ↑"; }
+th.sort-desc::after { content: " ↓"; }
+tr.row-main { cursor: pointer; }
+tr.row-main:hover td { background: #f9f9f9; }
+tr.row-main.expanded td { background: #eef5fc; }
+.detail-row td { background: #fafbfc !important; padding: 12px 16px; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; font-size: 12px; }
+.detail-grid div { color: #555; }
+.detail-grid div b { color: #1a1a1a; }
+.bd { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.bd-item { font-size: 11px; padding: 3px 8px; border-radius: 4px; background: #f0f0f0; color: #333; }
+.tag { display: inline-block; padding: 1px 5px; font-size: 10px; border-radius: 3px; background: #f0f0f0; color: #555; margin-right: 2px; }
+.tag.fresh { background: #fee; color: #c00; font-weight: 600; }
+.tag.extended { background: #fff3e0; color: #e65100; }
+.tag.earn { background: #e1f5fe; color: #01579b; }
+.score { font-weight: 600; }
+.score-high { color: #2e7d32; }
+.score-mid { color: #ff8f00; }
+.score-low { color: #757575; }
+.action-cell { font-size: 11px; font-weight: 500; padding: 2px 7px; border-radius: 10px; display: inline-block; }
+.action-STRONG_BUY { background: #2e7d32; color: #fff; }
+.action-BUY { background: #43a047; color: #fff; }
+.action-PRIME_WATCH { background: #fb8c00; color: #fff; }
+.action-WATCH { background: #ffb300; color: #fff; }
+.action-MONITOR { background: #e0e0e0; color: #333; }
+.action-PASS { background: #f5f5f5; color: #999; }
+.market-tag { display: inline-block; padding: 1px 5px; font-size: 10px; border-radius: 3px; font-weight: 600; }
+.market-BIST { background: #e3f2fd; color: #1565c0; }
+.market-US { background: #fff3e0; color: #e65100; }
+.market-CRYPTO { background: #ede7f6; color: #4527a0; }
+.market-FUTURE { background: #fff9c4; color: #827717; }
+.market-INDEX { background: #f5f5f5; color: #424242; }
+.toast { position: fixed; right: 18px; bottom: 18px; max-width: 380px; padding: 10px 14px; background: #323232; color: #fff; border-radius: 6px; font-size: 12px; z-index: 9999; box-shadow: 0 2px 8px rgba(0,0,0,0.2); white-space: pre-wrap; }
+.toast.success { background: #2e7d32; }
+.toast.error { background: #c62828; }
+.empty { padding: 30px; text-align: center; color: #999; }
+.footer { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid #eee; margin-top: 14px; align-items: center; }
+.footer .hint { font-size: 11px; color: #888; margin-left: auto; }
+.stat-strip { display: flex; gap: 14px; font-size: 11px; color: #666; padding: 4px 0; flex-wrap: wrap; }
+.stat-strip b { color: #1a1a1a; font-weight: 600; }
+</style></head><body>
+
+<div class="header">
+  <div>
+    <h1>Mr Burki Tarama</h1>
+    <div class="sub">Saatlik breakout scanner — O'Neil + Minervini + Weinstein · BIST + ABD + Crypto + Futures + Indices</div>
+  </div>
+  <div class="badges" id="badges"></div>
+</div>
+
+<div class="stat-strip" id="statstrip"></div>
+
+<div class="controls">
+  <div class="row">
+    <span style="font-size:11px;color:#777;margin-right:4px">Market:</span>
+    <span class="chip active" data-market="All">All</span>
+    <span class="chip" data-market="BIST">BIST</span>
+    <span class="chip" data-market="US">US</span>
+    <span class="chip" data-market="CRYPTO">Crypto</span>
+    <span class="chip" data-market="FUTURE">Futures</span>
+    <span class="chip" data-market="INDEX">Index</span>
+  </div>
+  <div class="row">
+    <span style="font-size:11px;color:#777;margin-right:4px">Action:</span>
+    <span class="chip act-strong active" data-action="STRONG_BUY">STRONG BUY</span>
+    <span class="chip act-buy active" data-action="BUY">BUY</span>
+    <span class="chip act-prime active" data-action="PRIME_WATCH">PRIME WATCH</span>
+    <span class="chip act-watch active" data-action="WATCH">WATCH</span>
+    <span class="chip act-monitor" data-action="MONITOR">MONITOR</span>
+    <input type="text" id="search" placeholder="Filter ticker..." />
+  </div>
+</div>
+
+<div class="table-wrap">
+  <table id="tbl">
+    <thead>
+      <tr>
+        <th data-sort="rank" style="width:32px">#</th>
+        <th data-sort="display">Ticker</th>
+        <th data-sort="market">Mkt</th>
+        <th data-sort="score" class="sort-desc">Score</th>
+        <th data-sort="action">Action</th>
+        <th data-sort="pivot_price">Pivot</th>
+        <th data-sort="today_close">Last</th>
+        <th data-sort="pct_to_pivot">%Piv</th>
+        <th data-sort="vol_multiplier">Vol×</th>
+        <th data-sort="rs_3m_percentile">RS3M</th>
+        <th data-sort="base_pattern">Pattern</th>
+        <th data-sort="stop">Stop</th>
+        <th data-sort="t1">T1</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <button class="btn primary" id="btn-download">Download .txt</button>
+  <button class="btn primary" id="btn-copy">Copy List</button>
+  <button class="btn" id="btn-show">Show TV text</button>
+  <span class="hint">For fresh data: type <b>"tarama yenile"</b> in chat</span>
+</div>
+
+<div id="toast-host"></div>
+
+<script type="application/json" id="snapshot-data">
+__SNAPSHOT_JSON__
+</script>
+
+<script>
+const SNAP = JSON.parse(document.getElementById("snapshot-data").textContent);
+const state = {
+  rows: SNAP.rows || [],
+  scores: SNAP,
+  poolMeta: SNAP.pool_meta || {},
+  market: "All",
+  actions: new Set(["STRONG_BUY","BUY","PRIME_WATCH","WATCH"]),
+  search: "", sortKey: "score", sortDir: "desc",
+  expanded: null,
+};
+
+function fmtNum(n, d) { if (d == null) d = 2; if (n == null || Number.isNaN(n)) return "-"; return Number(n).toFixed(d); }
+function fmtPct(n) { if (n == null || Number.isNaN(n)) return "-"; return (n > 0 ? "+" : "") + Number(n).toFixed(1) + "%"; }
+function fmtInt(n) { if (n == null || Number.isNaN(n)) return "-"; return Math.round(Number(n)); }
+function scoreClass(s) { if (s >= 80) return "score-high"; if (s >= 65) return "score-mid"; return "score-low"; }
+function escapeHTML(s) { return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+
+function renderBadges() {
+  const el = document.getElementById("badges");
+  const mkt = (state.scores && state.scores.market_context) || {};
+  const meta = state.poolMeta || {};
+  const ts = (state.scores.scored_at || "—").replace("T", " ");
+  let html = "";
+  ["BIST", "US"].forEach(m => {
+    const c = mkt[m] || {};
+    const cls = c.status === "HEALTHY" ? "healthy" : (c.status === "DEFENSIVE" ? "defensive" : "gray");
+    const dd = c.distribution_days_25d != null ? (" · DD " + c.distribution_days_25d) : "";
+    const press = c.under_pressure ? " ⚠" : "";
+    html += '<span class="badge ' + cls + '"><b>' + m + '</b> ' + (c.status || "?") + dd + press + '</span>';
+  });
+  html += '<span class="badge gray"><span class="lbl">scan</span> ' + ts + '</span>';
+  html += '<span class="badge gray"><span class="lbl">pool</span> ' + (meta.size || 0) + '</span>';
+  el.innerHTML = html;
+}
+
+function renderStatStrip() {
+  const el = document.getElementById("statstrip");
+  const meta = state.poolMeta || {};
+  const counts = { STRONG_BUY: 0, BUY: 0, PRIME_WATCH: 0, WATCH: 0, MONITOR: 0, PASS: 0 };
+  state.rows.forEach(r => { counts[r.action] = (counts[r.action] || 0) + 1; });
+  el.innerHTML =
+    '<span><b>' + (meta.total_tickers || 0) + '</b> scanned · <b>' + (meta.size || 0) + '</b> in pool · <b>' + (meta.rejected || 0) + '</b> rejected</span>' +
+    '<span style="color:#2e7d32">● <b>' + counts.STRONG_BUY + '</b> strong</span>' +
+    '<span style="color:#43a047">● <b>' + counts.BUY + '</b> buy</span>' +
+    '<span style="color:#fb8c00">● <b>' + counts.PRIME_WATCH + '</b> prime</span>' +
+    '<span style="color:#ffb300">● <b>' + counts.WATCH + '</b> watch</span>' +
+    '<span style="color:#757575">● <b>' + counts.MONITOR + '</b> monitor</span>';
+}
+
+function getFiltered() {
+  let rows = state.rows.filter(r => {
+    if (state.market !== "All" && r.market !== state.market) return false;
+    if (state.actions.size && !state.actions.has(r.action)) return false;
+    if (state.search) {
+      const s = state.search.toUpperCase();
+      const d = (r.display || "").toUpperCase();
+      if (d.indexOf(s) < 0 && (r.symbol || "").toUpperCase().indexOf(s) < 0) return false;
+    }
+    return true;
+  });
+  const k = state.sortKey;
+  const dir = state.sortDir === "asc" ? 1 : -1;
+  rows.sort((a, b) => {
+    if (k === "rank") return 0;
+    let av = a[k]; let bv = b[k];
+    if (av == null) av = -Infinity;
+    if (bv == null) bv = -Infinity;
+    if (typeof av === "string") return av.localeCompare(bv) * dir;
+    return (av - bv) * dir;
+  });
+  return rows;
+}
+
+function renderTable() {
+  const tbody = document.getElementById("tbody");
+  const rows = getFiltered();
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="14" class="empty">No candidates match current filters.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map((r, i) => rowHTML(r, i)).join("");
+  tbody.querySelectorAll("tr.row-main").forEach(tr => {
+    tr.addEventListener("click", () => {
+      const sym = tr.dataset.sym;
+      state.expanded = (state.expanded === sym) ? null : sym;
+      renderTable();
+    });
+  });
+}
+
+function rowHTML(r, i) {
+  const isExp = state.expanded === r.symbol;
+  const sc = r.score || 0;
+  const notes = (r.notes || []).map(n => {
+    const cls = n === "FRESH" ? "fresh" : (n === "EXTENDED" ? "extended" : (n === "EARN-SOON" ? "earn" : ""));
+    return '<span class="tag ' + cls + '">' + n + '</span>';
+  }).join("");
+  const main =
+    '<tr class="row-main ' + (isExp ? "expanded" : "") + '" data-sym="' + r.symbol + '">' +
+      '<td>' + (i + 1) + '</td>' +
+      '<td><b>' + r.display + '</b></td>' +
+      '<td><span class="market-tag market-' + r.market + '">' + r.market + '</span></td>' +
+      '<td class="score ' + scoreClass(sc) + '">' + sc + '</td>' +
+      '<td><span class="action-cell action-' + r.action + '">' + (r.action || "").replace("_", " ") + '</span></td>' +
+      '<td>' + fmtNum(r.pivot_price, 2) + '</td>' +
+      '<td>' + fmtNum(r.today_close, 2) + '</td>' +
+      '<td>' + fmtPct(r.pct_to_pivot) + '</td>' +
+      '<td>' + fmtNum(r.vol_multiplier, 1) + '×</td>' +
+      '<td>' + fmtInt(r.rs_3m_percentile) + '</td>' +
+      '<td>' + (r.base_pattern || "-") + '</td>' +
+      '<td>' + fmtNum(r.stop, 2) + '</td>' +
+      '<td>' + fmtNum(r.t1, 2) + '</td>' +
+      '<td>' + notes + '</td>' +
+    '</tr>';
+  if (!isExp) return main;
+  const bd = r.breakdown || {};
+  const tvUrl = "https://www.tradingview.com/chart/?symbol=" + encodeURIComponent(r.tv_symbol || "");
+  return main +
+    '<tr class="detail-row"><td colspan="14">' +
+      '<div class="detail-grid">' +
+        '<div><b>Symbol:</b> ' + r.symbol + ' (' + r.asset_type + ')</div>' +
+        '<div><b>TV symbol:</b> <code>' + r.tv_symbol + '</code></div>' +
+        '<div><b>Pattern:</b> ' + r.base_pattern + ' · ' + (r.base_length_weeks || "?") + 'w · depth ' + fmtNum(r.base_depth_pct, 1) + '%</div>' +
+        '<div><b>VCP contractions:</b> ' + r.vcp_contractions + ' · BB squeeze: ' + (r.bb_squeeze_recent ? "yes" : "no") + '</div>' +
+        '<div><b>RS 3M:</b> ' + fmtInt(r.rs_3m_percentile) + ' · <b>RS 6M:</b> ' + fmtInt(r.rs_6m_percentile) + '</div>' +
+        '<div><b>50DMA slope (3M):</b> ' + fmtNum(r.slope_50dma_3m_pct, 1) + '%</div>' +
+        '<div><b>Avg vol 50d:</b> ' + (r.avg_volume_50d ? Math.round(r.avg_volume_50d).toLocaleString() : "-") + '</div>' +
+        '<div><b>Earnings:</b> ' + (r.earnings_next_date || "-") + '</div>' +
+        '<div><b>Stop / T1 / T2:</b> ' + fmtNum(r.stop, 2) + ' · ' + fmtNum(r.t1, 2) + ' · ' + fmtNum(r.t2, 2) + '</div>' +
+        '<div><b>ATR(20):</b> ' + fmtNum(r.atr_20, 2) + '</div>' +
+      '</div>' +
+      '<div class="bd">' +
+        '<span class="bd-item">vol: ' + (bd.volume || 0) + '</span>' +
+        '<span class="bd-item">rs: ' + (bd.rs || 0) + '</span>' +
+        '<span class="bd-item">base: ' + (bd.base || 0) + '</span>' +
+        '<span class="bd-item">trend: ' + (bd.trend || 0) + '</span>' +
+        '<span class="bd-item">breakout: ' + (bd.breakout || 0) + '</span>' +
+        '<span class="bd-item">momentum: ' + (bd.momentum || 0) + '</span>' +
+        '<a href="' + tvUrl + '" target="_blank" rel="noopener" style="margin-left:auto;font-size:11px;color:#1a73e8;text-decoration:none">Open in TradingView ↗</a>' +
+      '</div>' +
+    '</td></tr>';
+}
+
+function buildTVText() {
+  const rows = getFiltered();
+  const groups = { STRONG_BUY: [], BUY: [], PRIME_WATCH: [], WATCH: [], MONITOR: [] };
+  rows.forEach(r => { if (groups[r.action]) groups[r.action].push(r.tv_symbol); });
+  const labels = { STRONG_BUY: "STRONG BUY", BUY: "BUY", PRIME_WATCH: "PRIME WATCH", WATCH: "WATCH", MONITOR: "MONITOR" };
+  let out = "";
+  ["STRONG_BUY","BUY","PRIME_WATCH","WATCH","MONITOR"].forEach(k => {
+    if (groups[k].length) out += "###" + labels[k] + "\n" + groups[k].join(",") + "\n";
+  });
+  return out;
+}
+
+function toast(msg, kind) {
+  const host = document.getElementById("toast-host");
+  const t = document.createElement("div");
+  t.className = "toast " + (kind || "");
+  t.textContent = msg;
+  host.appendChild(t);
+  setTimeout(() => t.remove(), 5000);
+}
+
+document.querySelectorAll("th[data-sort]").forEach(th => {
+  th.addEventListener("click", () => {
+    const k = th.dataset.sort;
+    if (k === "rank") return;
+    if (state.sortKey === k) state.sortDir = state.sortDir === "desc" ? "asc" : "desc";
+    else { state.sortKey = k; state.sortDir = "desc"; }
+    document.querySelectorAll("th").forEach(x => x.classList.remove("sort-asc", "sort-desc"));
+    th.classList.add(state.sortDir === "desc" ? "sort-desc" : "sort-asc");
+    renderTable();
+  });
+});
+
+document.querySelectorAll(".chip[data-market]").forEach(c => {
+  c.addEventListener("click", () => {
+    document.querySelectorAll(".chip[data-market]").forEach(x => x.classList.remove("active"));
+    c.classList.add("active");
+    state.market = c.dataset.market;
+    renderTable();
+  });
+});
+
+document.querySelectorAll(".chip[data-action]").forEach(c => {
+  c.addEventListener("click", () => {
+    const a = c.dataset.action;
+    if (state.actions.has(a)) { state.actions.delete(a); c.classList.remove("active"); }
+    else { state.actions.add(a); c.classList.add("active"); }
+    renderTable();
+  });
+});
+
+document.getElementById("search").addEventListener("input", e => { state.search = e.target.value; renderTable(); });
+
+document.getElementById("btn-download").addEventListener("click", () => {
+  const text = buildTVText();
+  if (!text) { toast("Nothing to export with current filters", "error"); return; }
+  const blob = new Blob([text], { type: "text/plain" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  const ts = new Date().toISOString().replace(/[-:]/g, "").substring(0, 13).replace("T", "_");
+  a.href = url;
+  a.download = "mr_burki_tarama_" + ts + ".txt";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  toast("Downloaded — drag the .txt into TradingView watchlist", "success");
+});
+
+document.getElementById("btn-copy").addEventListener("click", async () => {
+  const text = buildTVText();
+  if (!text) { toast("Nothing to copy with current filters", "error"); return; }
+  try {
+    await navigator.clipboard.writeText(text);
+    toast("Copied " + text.split("\n").filter(l => !l.startsWith("###") && l).join(",").split(",").length + " tickers to clipboard", "success");
+  } catch (e) {
+    toast("Clipboard failed: " + e.message, "error");
+  }
+});
+
+document.getElementById("btn-show").addEventListener("click", () => {
+  const text = buildTVText();
+  toast(text || "(empty)", "");
+});
+
+renderBadges();
+renderStatStrip();
+renderTable();
+</script>
+</body></html>
