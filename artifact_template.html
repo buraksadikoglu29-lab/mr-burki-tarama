@@ -128,6 +128,7 @@ tr.row-main.expanded td { background: #eef5fc; }
         <th data-sort="pct_to_pivot">%Piv</th>
         <th data-sort="vol_multiplier">Vol×</th>
         <th data-sort="rs_3m_percentile">RS3M</th>
+        <th data-sort="earnings_next_date">Bilanço</th>
         <th data-sort="base_pattern">Pattern</th>
         <th data-sort="stop">Stop</th>
         <th data-sort="t1">T1</th>
@@ -229,7 +230,7 @@ function renderTable() {
   const tbody = document.getElementById("tbody");
   const rows = getFiltered();
   if (!rows.length) {
-    tbody.innerHTML = '<tr><td colspan="14" class="empty">No candidates match current filters.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="15" class="empty">No candidates match current filters.</td></tr>';
     return;
   }
   tbody.innerHTML = rows.map((r, i) => rowHTML(r, i)).join("");
@@ -261,6 +262,7 @@ function rowHTML(r, i) {
       '<td>' + fmtPct(r.pct_to_pivot) + '</td>' +
       '<td>' + fmtNum(r.vol_multiplier, 1) + '×</td>' +
       '<td>' + fmtInt(r.rs_3m_percentile) + '</td>' +
+      '<td>' + (r.earnings_next_date || "-") + '</td>' +
       '<td>' + (r.base_pattern || "-") + '</td>' +
       '<td>' + fmtNum(r.stop, 2) + '</td>' +
       '<td>' + fmtNum(r.t1, 2) + '</td>' +
@@ -270,7 +272,7 @@ function rowHTML(r, i) {
   const bd = r.breakdown || {};
   const tvUrl = "https://www.tradingview.com/chart/?symbol=" + encodeURIComponent(r.tv_symbol || "");
   return main +
-    '<tr class="detail-row"><td colspan="14">' +
+    '<tr class="detail-row"><td colspan="15">' +
       '<div class="detail-grid">' +
         '<div><b>Symbol:</b> ' + r.symbol + ' (' + r.asset_type + ')</div>' +
         '<div><b>TV symbol:</b> <code>' + r.tv_symbol + '</code></div>' +
