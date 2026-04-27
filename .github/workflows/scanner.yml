@@ -10,9 +10,9 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths:
-      - 'hisseler.txt'
-      - '*.py'
+    # No paths filter: empty commits from the local "scheduled trigger" task
+    # need to fire this workflow. To prevent infinite loops from the bot's own
+    # commits, the "Commit results" step appends [skip ci] to its messages.
 
 permissions:
   contents: write
@@ -84,7 +84,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Scan: $(date -u +%Y-%m-%dT%H:%MZ) [${{ steps.mode.outputs.mode }}]"
+            git commit -m "Scan: $(date -u +%Y-%m-%dT%H:%MZ) [${{ steps.mode.outputs.mode }}] [skip ci]"
             git push
           fi
 
