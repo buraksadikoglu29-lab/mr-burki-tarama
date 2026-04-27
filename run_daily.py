@@ -4,7 +4,8 @@ import logging
 import sys
 from pathlib import Path
 
-LOG_FILE = Path("/Users/burak/Desktop/piyasalar/logs/daily.log")
+import os
+LOG_FILE = Path(os.environ.get("SCANNER_BASE", "/Users/burak/Desktop/piyasalar")) / "logs" / "daily.log"
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,

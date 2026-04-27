@@ -5,7 +5,8 @@ import logging
 import sys
 from pathlib import Path
 
-LOG_FILE = Path("/Users/burak/Desktop/piyasalar/logs/hourly.log")
+import os
+LOG_FILE = Path(os.environ.get("SCANNER_BASE", "/Users/burak/Desktop/piyasalar")) / "logs" / "hourly.log"
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
@@ -16,7 +17,7 @@ logging.basicConfig(
 from scanner_core import run_hourly_scan, SCORES_PATH  # noqa: E402
 from notify import notify  # noqa: E402
 
-LAST_STRONG_PATH = Path("/Users/burak/Desktop/piyasalar/cache/last_strong_set.json")
+LAST_STRONG_PATH = Path(os.environ.get("SCANNER_BASE", "/Users/burak/Desktop/piyasalar")) / "cache" / "last_strong_set.json"
 
 
 def _load_prev() -> set[str]:
