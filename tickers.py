@@ -108,8 +108,8 @@ def to_tv_symbol(t: Ticker) -> str:
         return f"BINANCE:{t.display}USDT"
     if t.asset_type == FUTURE:
         return f"COMEX:{t.display}"
-    # STOCK_US -> NASDAQ default; will be overridden later if exchange info known
-    return f"NASDAQ:{t.display}"
+    # STOCK_US -> bare ticker (TradingView resolves NASDAQ/NYSE automatically)
+    return t.display
 
 
 def benchmark_for(t: Ticker) -> str:

@@ -353,13 +353,7 @@ def run_daily_refresh(hisseler_path: Path = HISSELER_PATH, use_cache: bool = Tru
         bench_df = daily_map.get(bench_sym)
         try:
             metrics = compute_metrics(t, df, bench_df, earnings)
-            # For US stocks, look up exchange for correct TV prefix
-            if t.asset_type == STOCK_US:
-                try:
-                    ex = get_exchange(t.symbol)
-                    metrics["tv_symbol"] = f"{ex}:{t.display}"
-                except Exception:
-                    pass
+            # US stocks now use bare ticker — no exchange lookup needed
             pool.append(metrics)
         except Exception as e:
             log.warning("metrics fail %s: %s", t.symbol, e)
