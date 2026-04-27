@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-27T09:33:07",
+  "generated_at": "2026-04-27T06:45:12",
   "total_tickers": 873,
-  "pool_size": 62,
-  "rejected_count": 811,
+  "pool_size": 66,
+  "rejected_count": 807,
   "pool": [
     {
       "symbol": "AEFES.IS",
@@ -43,7 +43,7 @@
       "tight_5d_range_pct": 4.866489208218009,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 7.235897821085377,
+      "atr_20": 7.235897821085375,
       "slope_50dma_3m_pct": 7.729445215919149
     },
     {
@@ -64,7 +64,7 @@
       "tight_5d_range_pct": 6.443298779026539,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-08",
-      "atr_20": 1.0173937263075052,
+      "atr_20": 1.0173937263075055,
       "slope_50dma_3m_pct": 4.476964764478727
     },
     {
@@ -85,7 +85,7 @@
       "tight_5d_range_pct": 4.549508067387223,
       "bb_squeeze_recent": true,
       "earnings_next_date": null,
-      "atr_20": 3.6299741753405104,
+      "atr_20": 3.6299741753405113,
       "slope_50dma_3m_pct": 16.856208876887827
     },
     {
@@ -106,7 +106,7 @@
       "tight_5d_range_pct": 13.46992188601023,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 1.906405208092097,
+      "atr_20": 1.9064052080920968,
       "slope_50dma_3m_pct": 17.48912368857913
     },
     {
@@ -127,7 +127,7 @@
       "tight_5d_range_pct": 6.9884062927553865,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-07-15",
-      "atr_20": 57.02572742208845,
+      "atr_20": 57.02572742147198,
       "slope_50dma_3m_pct": 24.705575017815416
     },
     {
@@ -148,7 +148,7 @@
       "tight_5d_range_pct": 16.14447443278652,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-07-21",
-      "atr_20": 2.121695170636681,
+      "atr_20": 2.1216951705969826,
       "slope_50dma_3m_pct": 27.053088652191498
     },
     {
@@ -169,7 +169,7 @@
       "tight_5d_range_pct": 4.444442522198338,
       "bb_squeeze_recent": true,
       "earnings_next_date": null,
-      "atr_20": 2.1465485337936663,
+      "atr_20": 2.146548533793666,
       "slope_50dma_3m_pct": 25.17504932953504
     },
     {
@@ -190,7 +190,7 @@
       "tight_5d_range_pct": 5.071322698267677,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-07-16",
-      "atr_20": 1.6273117552935152,
+      "atr_20": 1.6273117552971739,
       "slope_50dma_3m_pct": 7.787047079627183
     },
     {
@@ -199,7 +199,7 @@
       "asset_type": "FUTURE",
       "market": "FUTURE",
       "tv_symbol": "COMEX:CL",
-      "last_price": 96.16000366210938,
+      "last_price": 96.26000213623047,
       "pivot_price": 119.4800033569336,
       "base_pattern": "other",
       "base_length_weeks": 7,
@@ -207,12 +207,12 @@
       "vcp_contractions": 4,
       "rs_3m_percentile": 84.49197860962568,
       "rs_6m_percentile": 85.48387096774194,
-      "avg_volume_50d": 409391.84,
-      "tight_5d_range_pct": 11.179284100044082,
+      "avg_volume_50d": 409399.54,
+      "tight_5d_range_pct": 11.167670643499706,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 7.455012235853511,
-      "slope_50dma_3m_pct": 50.207297582503486
+      "atr_20": 7.4550122358535065,
+      "slope_50dma_3m_pct": 50.21070983589211
     },
     {
       "symbol": "CLEBI.IS",
@@ -232,7 +232,7 @@
       "tight_5d_range_pct": 20.167627029858565,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 84.69070477595842,
+      "atr_20": 84.69070477595841,
       "slope_50dma_3m_pct": 13.065227569552249
     },
     {
@@ -253,7 +253,7 @@
       "tight_5d_range_pct": 6.997810268931433,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-07-09",
-      "atr_20": 2.874760307043877,
+      "atr_20": 2.874760307048888,
       "slope_50dma_3m_pct": -0.6789971764221664
     },
     {
@@ -295,7 +295,7 @@
       "tight_5d_range_pct": 7.611887491445017,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-07-23",
-      "atr_20": 6.082033338806333,
+      "atr_20": 6.082033338886978,
       "slope_50dma_3m_pct": 11.990025370003575
     },
     {
@@ -316,8 +316,8 @@
       "tight_5d_range_pct": 6.367173407413213,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-05",
-      "atr_20": 4.140843759367623,
-      "slope_50dma_3m_pct": 2.856065298540875
+      "atr_20": 4.140843759851978,
+      "slope_50dma_3m_pct": 2.8560654138869803
     },
     {
       "symbol": "EXPD",
@@ -337,7 +337,7 @@
       "tight_5d_range_pct": 4.689616619299204,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-05",
-      "atr_20": 3.544436667439506,
+      "atr_20": 3.5444366674395056,
       "slope_50dma_3m_pct": -3.5944551802759515
     },
     {
@@ -358,7 +358,7 @@
       "tight_5d_range_pct": 4.371105519092591,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-07",
-      "atr_20": 1.5519540096411177,
+      "atr_20": 1.5519540098113886,
       "slope_50dma_3m_pct": 4.052595081330292
     },
     {
@@ -379,7 +379,7 @@
       "tight_5d_range_pct": 5.1550571509404115,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-07-17",
-      "atr_20": 1.260529197179372,
+      "atr_20": 1.2605291973365471,
       "slope_50dma_3m_pct": 5.123112414497531
     },
     {
@@ -400,7 +400,7 @@
       "tight_5d_range_pct": 4.318488529014845,
       "bb_squeeze_recent": true,
       "earnings_next_date": null,
-      "atr_20": 11.446986510003446,
+      "atr_20": 11.446986510003441,
       "slope_50dma_3m_pct": 12.868678384858164
     },
     {
@@ -421,7 +421,7 @@
       "tight_5d_range_pct": 3.5375645976987578,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-07-14",
-      "atr_20": 25.70790025650807,
+      "atr_20": 25.707900255735385,
       "slope_50dma_3m_pct": -0.18497390199263597
     },
     {
@@ -442,7 +442,7 @@
       "tight_5d_range_pct": 6.660412757973734,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 21.621271359681323,
+      "atr_20": 21.621271359681316,
       "slope_50dma_3m_pct": 46.397228637413406
     },
     {
@@ -463,7 +463,7 @@
       "tight_5d_range_pct": 3.6289438465286326,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-05-07",
-      "atr_20": 27.776814384131196,
+      "atr_20": 27.776814384629986,
       "slope_50dma_3m_pct": 12.201089636451256
     },
     {
@@ -484,8 +484,8 @@
       "tight_5d_range_pct": 11.968865202210246,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-20",
-      "atr_20": 3.221831316502811,
-      "slope_50dma_3m_pct": 15.766592831034549
+      "atr_20": 3.221831315037346,
+      "slope_50dma_3m_pct": 15.766593046748836
     },
     {
       "symbol": "HG=F",
@@ -493,7 +493,7 @@
       "asset_type": "FUTURE",
       "market": "FUTURE",
       "tv_symbol": "COMEX:HG",
-      "last_price": 6.040999889373779,
+      "last_price": 6.0355000495910645,
       "pivot_price": 6.507999897003174,
       "base_pattern": "asc-triangle",
       "base_length_weeks": 12,
@@ -501,12 +501,12 @@
       "vcp_contractions": 2,
       "rs_3m_percentile": 34.75935828877005,
       "rs_6m_percentile": 55.64516129032258,
-      "avg_volume_50d": 1857.66,
-      "tight_5d_range_pct": 2.507858814837442,
+      "avg_volume_50d": 1862.3,
+      "tight_5d_range_pct": 2.5101440971779185,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
       "atr_20": 0.10858918925400524,
-      "slope_50dma_3m_pct": 5.862455429504801
+      "slope_50dma_3m_pct": 5.860440961608247
     },
     {
       "symbol": "HSIC",
@@ -526,7 +526,7 @@
       "tight_5d_range_pct": 5.6100057038431235,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-05",
-      "atr_20": 2.0054013850722634,
+      "atr_20": 2.005401385072263,
       "slope_50dma_3m_pct": 1.7492754997529367
     },
     {
@@ -547,7 +547,7 @@
       "tight_5d_range_pct": 6.675746061740925,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 1.4563863280811093,
+      "atr_20": 1.4563863280811098,
       "slope_50dma_3m_pct": 13.358604945697072
     },
     {
@@ -568,7 +568,7 @@
       "tight_5d_range_pct": 3.22011846419942,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-06",
-      "atr_20": 3.6335282238240882,
+      "atr_20": 3.6335282238320894,
       "slope_50dma_3m_pct": 18.351184983883893
     },
     {
@@ -589,7 +589,7 @@
       "tight_5d_range_pct": 4.879230001698369,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-08",
-      "atr_20": 5.969756876634429,
+      "atr_20": 5.9697568766344284,
       "slope_50dma_3m_pct": 15.373495492920739
     },
     {
@@ -610,8 +610,8 @@
       "tight_5d_range_pct": 4.715666158069738,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-04-16",
-      "atr_20": 0.5268189881247941,
-      "slope_50dma_3m_pct": 5.093504249345768
+      "atr_20": 0.5268189875034147,
+      "slope_50dma_3m_pct": 5.09350486108309
     },
     {
       "symbol": "L",
@@ -631,7 +631,7 @@
       "tight_5d_range_pct": 2.6315822155214916,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-04",
-      "atr_20": 1.9606586371543302,
+      "atr_20": 1.96065863715433,
       "slope_50dma_3m_pct": 3.8954725253002933
     },
     {
@@ -656,6 +656,27 @@
       "slope_50dma_3m_pct": 6.2824659655399575
     },
     {
+      "symbol": "MCHP",
+      "display": "MCHP",
+      "asset_type": "STOCK_US",
+      "market": "US",
+      "tv_symbol": "NASDAQ:MCHP",
+      "last_price": 89.44000244140625,
+      "pivot_price": 82.86209947934059,
+      "base_pattern": "cup-handle",
+      "base_length_weeks": 10,
+      "base_depth_pct": 28.423245674485532,
+      "vcp_contractions": 3,
+      "rs_3m_percentile": 79.7872340425532,
+      "rs_6m_percentile": 99.2,
+      "avg_volume_50d": 8750602.0,
+      "tight_5d_range_pct": 15.451698700341549,
+      "bb_squeeze_recent": false,
+      "earnings_next_date": "2026-05-07",
+      "atr_20": 3.0420928257989486,
+      "slope_50dma_3m_pct": 11.896769688502697
+    },
+    {
       "symbol": "MGROS.IS",
       "display": "MGROS",
       "asset_type": "STOCK_BIST",
@@ -673,7 +694,7 @@
       "tight_5d_range_pct": 7.204385277995301,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-07",
-      "atr_20": 19.928700699617416,
+      "atr_20": 19.928700699617426,
       "slope_50dma_3m_pct": 14.999817830728295
     },
     {
@@ -694,7 +715,7 @@
       "tight_5d_range_pct": 4.026590043089547,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-07",
-      "atr_20": 1.7003050487962559,
+      "atr_20": 1.7003050487962557,
       "slope_50dma_3m_pct": 2.2858221911963397
     },
     {
@@ -715,7 +736,7 @@
       "tight_5d_range_pct": 8.724832214765101,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 15.93508317018563,
+      "atr_20": 15.935083170185637,
       "slope_50dma_3m_pct": 21.421222306056652
     },
     {
@@ -736,7 +757,7 @@
       "tight_5d_range_pct": 3.480362828618281,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-07-15",
-      "atr_20": 4.8146847259600145,
+      "atr_20": 4.814684725736549,
       "slope_50dma_3m_pct": 7.216403759414266
     },
     {
@@ -757,8 +778,29 @@
       "tight_5d_range_pct": 3.4247109822216397,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-27",
-      "atr_20": 6.405338305791641,
+      "atr_20": 6.405338305632525,
       "slope_50dma_3m_pct": 14.1230370739991
+    },
+    {
+      "symbol": "NEM",
+      "display": "NEM",
+      "asset_type": "STOCK_US",
+      "market": "US",
+      "tv_symbol": "NASDAQ:NEM",
+      "last_price": 120.69999694824219,
+      "pivot_price": 134.6075851936208,
+      "base_pattern": "cup-handle",
+      "base_length_weeks": 12,
+      "base_depth_pct": 29.91479922755385,
+      "vcp_contractions": 4,
+      "rs_3m_percentile": 1.5957446808510638,
+      "rs_6m_percentile": 17.599999999999998,
+      "avg_volume_50d": 10122824.0,
+      "tight_5d_range_pct": 10.729084428386406,
+      "bb_squeeze_recent": true,
+      "earnings_next_date": "2026-07-23",
+      "atr_20": 4.98529348279672,
+      "slope_50dma_3m_pct": 15.454383657909098
     },
     {
       "symbol": "NSC",
@@ -778,7 +820,7 @@
       "tight_5d_range_pct": 7.932184176085028,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-04-24",
-      "atr_20": 6.154892976896672,
+      "atr_20": 6.154892977160743,
       "slope_50dma_3m_pct": 4.175077900715572
     },
     {
@@ -799,7 +841,7 @@
       "tight_5d_range_pct": 9.6137339055794,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 15.201776139152793,
+      "atr_20": 15.201776139152791,
       "slope_50dma_3m_pct": -1.1124411914043733
     },
     {
@@ -820,7 +862,7 @@
       "tight_5d_range_pct": 12.112865158653538,
       "bb_squeeze_recent": true,
       "earnings_next_date": null,
-      "atr_20": 0.663159362459936,
+      "atr_20": 0.6631593624599359,
       "slope_50dma_3m_pct": 9.772109075666876
     },
     {
@@ -841,7 +883,7 @@
       "tight_5d_range_pct": 5.212410935164721,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-07-15",
-      "atr_20": 5.19268144032881,
+      "atr_20": 5.192681441322268,
       "slope_50dma_3m_pct": 6.103212152350512
     },
     {
@@ -883,7 +925,7 @@
       "tight_5d_range_pct": 5.476345187148568,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-05",
-      "atr_20": 11.311029247435586,
+      "atr_20": 11.311029247307546,
       "slope_50dma_3m_pct": -3.578378764762831
     },
     {
@@ -904,7 +946,7 @@
       "tight_5d_range_pct": 12.047481547109868,
       "bb_squeeze_recent": true,
       "earnings_next_date": null,
-      "atr_20": 2.137119553747375,
+      "atr_20": 2.137119553747374,
       "slope_50dma_3m_pct": 44.28641078668241
     },
     {
@@ -925,8 +967,8 @@
       "tight_5d_range_pct": 6.60377076994826,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-07-16",
-      "atr_20": 9.839303631608852,
-      "slope_50dma_3m_pct": 8.218365542599711
+      "atr_20": 9.839303619124195,
+      "slope_50dma_3m_pct": 8.21836573345323
     },
     {
       "symbol": "TABGD.IS",
@@ -946,7 +988,7 @@
       "tight_5d_range_pct": 5.608365019011407,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 8.223636692324463,
+      "atr_20": 8.22363669232446,
       "slope_50dma_3m_pct": 11.694889058231993
     },
     {
@@ -988,7 +1030,7 @@
       "tight_5d_range_pct": 8.372386719461932,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-07-22",
-      "atr_20": 17.99029163446122,
+      "atr_20": 17.990291634461215,
       "slope_50dma_3m_pct": 23.262851614221827
     },
     {
@@ -1009,8 +1051,8 @@
       "tight_5d_range_pct": 2.9962556110377325,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-07-17",
-      "atr_20": 1.178051891434683,
-      "slope_50dma_3m_pct": 0.7042440306352828
+      "atr_20": 1.1780518908267843,
+      "slope_50dma_3m_pct": 0.7042441909419341
     },
     {
       "symbol": "TRCAS.IS",
@@ -1030,7 +1072,7 @@
       "tight_5d_range_pct": 5.964915157281814,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 1.7719617771575091,
+      "atr_20": 1.7719617771575087,
       "slope_50dma_3m_pct": 9.385983421053282
     },
     {
@@ -1051,8 +1093,8 @@
       "tight_5d_range_pct": 3.1480191700344067,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-07-16",
-      "atr_20": 5.8222210363789495,
-      "slope_50dma_3m_pct": 5.7118130375883425
+      "atr_20": 5.822221045150619,
+      "slope_50dma_3m_pct": 5.711813265009283
     },
     {
       "symbol": "TRX-USD",
@@ -1060,7 +1102,7 @@
       "asset_type": "CRYPTO",
       "market": "CRYPTO",
       "tv_symbol": "BINANCE:TRXUSDT",
-      "last_price": 0.32383936643600464,
+      "last_price": 0.32362890243530273,
       "pivot_price": 0.3697870075702667,
       "base_pattern": "cup-handle",
       "base_length_weeks": 36,
@@ -1068,12 +1110,12 @@
       "vcp_contractions": 2,
       "rs_3m_percentile": 8.333333333333332,
       "rs_6m_percentile": 66.25,
-      "avg_volume_50d": 610606316.96,
-      "tight_5d_range_pct": 2.72481407102324,
+      "avg_volume_50d": 610624293.92,
+      "tight_5d_range_pct": 2.7265860860263533,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 0.0047091851285310056,
-      "slope_50dma_3m_pct": 7.824269480650561
+      "atr_20": 0.004709185128531006,
+      "slope_50dma_3m_pct": 7.822825795408107
     },
     {
       "symbol": "TSN",
@@ -1093,7 +1135,7 @@
       "tight_5d_range_pct": 3.9825070836719276,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-05-04",
-      "atr_20": 1.3692996655411636,
+      "atr_20": 1.3692996655387402,
       "slope_50dma_3m_pct": 10.469782469759387
     },
     {
@@ -1135,8 +1177,29 @@
       "tight_5d_range_pct": 4.9233301278382315,
       "bb_squeeze_recent": true,
       "earnings_next_date": "2026-05-08",
-      "atr_20": 3.6008296847098524,
+      "atr_20": 3.6008296847098515,
       "slope_50dma_3m_pct": 4.087599533778778
+    },
+    {
+      "symbol": "UNP",
+      "display": "UNP",
+      "asset_type": "STOCK_US",
+      "market": "US",
+      "tv_symbol": "NASDAQ:UNP",
+      "last_price": 268.70001220703125,
+      "pivot_price": 268.1400146484375,
+      "base_pattern": "other",
+      "base_length_weeks": 7,
+      "base_depth_pct": 14.3990165051607,
+      "vcp_contractions": 1,
+      "rs_3m_percentile": 88.82978723404256,
+      "rs_6m_percentile": 91.2,
+      "avg_volume_50d": 3147118.0,
+      "tight_5d_range_pct": 9.784148623210939,
+      "bb_squeeze_recent": false,
+      "earnings_next_date": "2026-07-23",
+      "atr_20": 5.641943760115714,
+      "slope_50dma_3m_pct": 10.038359619796477
     },
     {
       "symbol": "USB",
@@ -1156,8 +1219,8 @@
       "tight_5d_range_pct": 4.767897847928794,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-07-16",
-      "atr_20": 1.315028386815615,
-      "slope_50dma_3m_pct": 5.3229717511449195
+      "atr_20": 1.3150283863877552,
+      "slope_50dma_3m_pct": 5.322970654042118
     },
     {
       "symbol": "VTRS",
@@ -1177,7 +1240,7 @@
       "tight_5d_range_pct": 5.894452373936546,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-07",
-      "atr_20": 0.41482053394626456,
+      "atr_20": 0.41482053394541546,
       "slope_50dma_3m_pct": 22.963616192309246
     },
     {
@@ -1198,8 +1261,8 @@
       "tight_5d_range_pct": 3.956286246524579,
       "bb_squeeze_recent": false,
       "earnings_next_date": "2026-05-21",
-      "atr_20": 2.748835872641325,
-      "slope_50dma_3m_pct": 12.222254811494837
+      "atr_20": 2.74883587232845,
+      "slope_50dma_3m_pct": 12.222254964474825
     },
     {
       "symbol": "YUNSA.IS",
@@ -1219,7 +1282,7 @@
       "tight_5d_range_pct": 7.2847734058608085,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 0.31001990079647873,
+      "atr_20": 0.3100199007964787,
       "slope_50dma_3m_pct": 7.132897878554946
     },
     {
@@ -1240,7 +1303,7 @@
       "tight_5d_range_pct": 7.429546393893552,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 0.41848718422247966,
+      "atr_20": 0.41848718422247977,
       "slope_50dma_3m_pct": 10.869854583931348
     },
     {
@@ -1249,7 +1312,7 @@
       "asset_type": "FUTURE",
       "market": "FUTURE",
       "tv_symbol": "COMEX:ZC",
-      "last_price": 466.25,
+      "last_price": 467.0,
       "pivot_price": 477.25,
       "base_pattern": "VCP",
       "base_length_weeks": 51,
@@ -1257,12 +1320,12 @@
       "vcp_contractions": 3,
       "rs_3m_percentile": 62.56684491978609,
       "rs_6m_percentile": 54.83870967741935,
-      "avg_volume_50d": 149470.26,
-      "tight_5d_range_pct": 3.485254691689008,
+      "avg_volume_50d": 149476.44,
+      "tight_5d_range_pct": 3.4796573875803,
       "bb_squeeze_recent": true,
       "earnings_next_date": null,
-      "atr_20": 7.512624098231788,
-      "slope_50dma_3m_pct": 2.7419614332666824
+      "atr_20": 7.51262409823179,
+      "slope_50dma_3m_pct": 2.7454089958399526
     },
     {
       "symbol": "ZW=F",
@@ -1270,7 +1333,7 @@
       "asset_type": "FUTURE",
       "market": "FUTURE",
       "tv_symbol": "COMEX:ZW",
-      "last_price": 618.25,
+      "last_price": 619.5,
       "pivot_price": 635.0,
       "base_pattern": "other",
       "base_length_weeks": 7,
@@ -1278,12 +1341,12 @@
       "vcp_contractions": 1,
       "rs_3m_percentile": 81.81818181818183,
       "rs_6m_percentile": 81.45161290322581,
-      "avg_volume_50d": 51014.32,
-      "tight_5d_range_pct": 5.014152850788516,
+      "avg_volume_50d": 51016.82,
+      "tight_5d_range_pct": 5.004035512510089,
       "bb_squeeze_recent": false,
       "earnings_next_date": null,
-      "atr_20": 15.758517550994982,
-      "slope_50dma_3m_pct": 12.627339946242214
+      "atr_20": 15.75851755099499,
+      "slope_50dma_3m_pct": 12.632122667227833
     },
     {
       "symbol": "^DJI",
@@ -1305,6 +1368,27 @@
       "earnings_next_date": null,
       "atr_20": 639.3523442658127,
       "slope_50dma_3m_pct": -0.5016261163282307
+    },
+    {
+      "symbol": "^STOXX50E",
+      "display": "STOXX50E",
+      "asset_type": "INDEX",
+      "market": "INDEX",
+      "tv_symbol": "TVC:SX5E",
+      "last_price": 5883.47998046875,
+      "pivot_price": 6199.77978515625,
+      "base_pattern": "VCP",
+      "base_length_weeks": 8,
+      "base_depth_pct": 13.274176746291626,
+      "vcp_contractions": 5,
+      "rs_3m_percentile": 21.22905027932961,
+      "rs_6m_percentile": 33.62068965517241,
+      "avg_volume_50d": 27101216.0,
+      "tight_5d_range_pct": 2.925141212812258,
+      "bb_squeeze_recent": false,
+      "earnings_next_date": null,
+      "atr_20": 103.04523670115479,
+      "slope_50dma_3m_pct": 1.4530856890210946
     }
   ]
 }
