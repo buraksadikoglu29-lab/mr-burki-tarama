@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-05-04T07:06:13",
+  "scored_at": "2026-05-04T08:06:47",
   "pool_refreshed_at": "2026-05-04T06:07:10",
   "pool_size": 56,
   "market_context": {
@@ -17,7 +17,7 @@
       "last": 7230.1201171875,
       "sma50": 6821.91400390625
     },
-    "computed_at": "2026-05-04T07:06:13"
+    "computed_at": "2026-05-04T08:06:47"
   },
   "rows": [
     {
@@ -498,10 +498,10 @@
         "momentum": 0
       },
       "action": "MONITOR",
-      "vol_multiplier": 2.05,
-      "today_close": 102.38999938964844,
-      "today_vol": 851157.0,
-      "pct_to_pivot": -14.3,
+      "vol_multiplier": 2.06,
+      "today_close": 103.23999786376953,
+      "today_vol": 856794.0,
+      "pct_to_pivot": -13.59,
       "stop": 104.83,
       "t1": 134.13,
       "t2": 148.78,
@@ -991,6 +991,48 @@
       "fresh_breakout": false
     },
     {
+      "symbol": "ZC=F",
+      "display": "ZC",
+      "asset_type": "FUTURE",
+      "market": "FUTURE",
+      "tv_symbol": "COMEX:ZC",
+      "last_price": 478.0,
+      "pivot_price": 473.75,
+      "base_pattern": "VCP",
+      "base_length_weeks": 6,
+      "base_depth_pct": 9.656992084432718,
+      "vcp_contractions": 4,
+      "rs_3m_percentile": 78.07486631016043,
+      "rs_6m_percentile": 62.096774193548384,
+      "avg_volume_50d": 137997.26,
+      "tight_5d_range_pct": 4.497907949790795,
+      "bb_squeeze_recent": false,
+      "earnings_next_date": null,
+      "atr_20": 7.56549137536045,
+      "slope_50dma_3m_pct": 3.834509433745058,
+      "score": 60,
+      "breakdown": {
+        "volume": 25,
+        "rs": 0,
+        "base": 15,
+        "trend": 5,
+        "breakout": 15,
+        "momentum": 0
+      },
+      "action": "MONITOR",
+      "vol_multiplier": 4.96,
+      "today_close": 480.75,
+      "today_vol": 684364.0,
+      "pct_to_pivot": 1.48,
+      "stop": 458.62,
+      "t1": 488.88,
+      "t2": 504.01,
+      "notes": [
+        "FRESH"
+      ],
+      "fresh_breakout": true
+    },
+    {
       "symbol": "PKG",
       "display": "PKG",
       "asset_type": "STOCK_US",
@@ -1351,48 +1393,6 @@
       "fresh_breakout": false
     },
     {
-      "symbol": "ZC=F",
-      "display": "ZC",
-      "asset_type": "FUTURE",
-      "market": "FUTURE",
-      "tv_symbol": "COMEX:ZC",
-      "last_price": 478.0,
-      "pivot_price": 473.75,
-      "base_pattern": "VCP",
-      "base_length_weeks": 6,
-      "base_depth_pct": 9.656992084432718,
-      "vcp_contractions": 4,
-      "rs_3m_percentile": 78.07486631016043,
-      "rs_6m_percentile": 62.096774193548384,
-      "avg_volume_50d": 137997.26,
-      "tight_5d_range_pct": 4.497907949790795,
-      "bb_squeeze_recent": false,
-      "earnings_next_date": null,
-      "atr_20": 7.56549137536045,
-      "slope_50dma_3m_pct": 3.834509433745058,
-      "score": 55,
-      "breakdown": {
-        "volume": 25,
-        "rs": 0,
-        "base": 15,
-        "trend": 5,
-        "breakout": 10,
-        "momentum": 0
-      },
-      "action": "MONITOR",
-      "vol_multiplier": 4.93,
-      "today_close": 478.5,
-      "today_vol": 680031.0,
-      "pct_to_pivot": 1.0,
-      "stop": 458.62,
-      "t1": 488.88,
-      "t2": 504.01,
-      "notes": [
-        "FRESH"
-      ],
-      "fresh_breakout": true
-    },
-    {
       "symbol": "GD",
       "display": "GD",
       "asset_type": "STOCK_US",
@@ -1742,10 +1742,10 @@
         "momentum": 6
       },
       "action": "PASS",
-      "vol_multiplier": 36.7,
-      "today_close": 5.9679999351501465,
-      "today_vol": 88866.0,
-      "pct_to_pivot": -8.3,
+      "vol_multiplier": 37.02,
+      "today_close": 5.954999923706055,
+      "today_vol": 89643.0,
+      "pct_to_pivot": -8.5,
       "stop": 6.31,
       "t1": 6.71,
       "t2": 6.9,
@@ -1822,10 +1822,10 @@
         "momentum": 4
       },
       "action": "PASS",
-      "vol_multiplier": 1.04,
-      "today_close": 0.3400947153568268,
-      "today_vol": 663528640.0,
-      "pct_to_pivot": -8.03,
+      "vol_multiplier": 1.05,
+      "today_close": 0.33904388546943665,
+      "today_vol": 672151168.0,
+      "pct_to_pivot": -8.31,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
