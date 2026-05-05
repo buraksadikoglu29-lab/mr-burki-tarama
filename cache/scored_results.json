@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-05-05T07:04:53",
+  "scored_at": "2026-05-05T08:06:55",
   "pool_refreshed_at": "2026-05-05T06:06:30",
   "pool_size": 49,
   "market_context": {
@@ -17,7 +17,7 @@
       "last": 7200.75,
       "sma50": 6827.73880859375
     },
-    "computed_at": "2026-05-05T07:04:53"
+    "computed_at": "2026-05-05T08:06:55"
   },
   "rows": [
     {
@@ -255,10 +255,10 @@
         "momentum": 6
       },
       "action": "MONITOR",
-      "vol_multiplier": 2.03,
-      "today_close": 104.36000061035156,
-      "today_vol": 839587.0,
-      "pct_to_pivot": -12.65,
+      "vol_multiplier": 2.05,
+      "today_close": 104.81999969482422,
+      "today_vol": 849788.0,
+      "pct_to_pivot": -12.27,
       "stop": 104.82,
       "t1": 134.14,
       "t2": 148.8,
@@ -295,10 +295,10 @@
         "momentum": 0
       },
       "action": "BUY",
-      "vol_multiplier": 4.38,
-      "today_close": 487.0,
-      "today_vol": 582580.0,
-      "pct_to_pivot": 2.8,
+      "vol_multiplier": 4.44,
+      "today_close": 486.0,
+      "today_vol": 590572.0,
+      "pct_to_pivot": 2.59,
       "stop": 458.67,
       "t1": 488.83,
       "t2": 503.91,
@@ -1417,10 +1417,10 @@
         "momentum": 0
       },
       "action": "PASS",
-      "vol_multiplier": 36.7,
-      "today_close": 5.9095001220703125,
-      "today_vol": 90813.0,
-      "pct_to_pivot": -9.2,
+      "vol_multiplier": 37.88,
+      "today_close": 5.936500072479248,
+      "today_vol": 93754.0,
+      "pct_to_pivot": -8.78,
       "stop": 6.3,
       "t1": 6.71,
       "t2": 6.92,
@@ -1537,10 +1537,10 @@
         "momentum": 4
       },
       "action": "PASS",
-      "vol_multiplier": 1.1,
-      "today_close": 0.3400360643863678,
-      "today_vol": 716438720.0,
-      "pct_to_pivot": -8.05,
+      "vol_multiplier": 1.09,
+      "today_close": 0.34074464440345764,
+      "today_vol": 705673600.0,
+      "pct_to_pivot": -7.85,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
