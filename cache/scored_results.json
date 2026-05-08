@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-05-08T06:07:42",
+  "scored_at": "2026-05-08T07:06:15",
   "pool_refreshed_at": "2026-05-08T06:07:39",
   "pool_size": 68,
   "market_context": {
@@ -17,7 +17,7 @@
       "last": 7337.10986328125,
       "sma50": 6853.488818359375
     },
-    "computed_at": "2026-05-08T06:07:42"
+    "computed_at": "2026-05-08T07:06:15"
   },
   "rows": [
     {
@@ -623,10 +623,10 @@
         "momentum": 6
       },
       "action": "WATCH",
-      "vol_multiplier": 83.59,
-      "today_close": 6.277500152587891,
-      "today_vol": 148224.0,
-      "pct_to_pivot": -3.54,
+      "vol_multiplier": 86.99,
+      "today_close": 6.305500030517578,
+      "today_vol": 154250.0,
+      "pct_to_pivot": -3.11,
       "stop": 6.28,
       "t1": 6.73,
       "t2": 6.96,
@@ -2746,10 +2746,10 @@
         "momentum": 4
       },
       "action": "PASS",
-      "vol_multiplier": 0.52,
-      "today_close": 0.34833481907844543,
-      "today_vol": 342090304.0,
-      "pct_to_pivot": -5.8,
+      "vol_multiplier": 0.46,
+      "today_close": 0.3494724631309509,
+      "today_vol": 306891392.0,
+      "pct_to_pivot": -5.49,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
