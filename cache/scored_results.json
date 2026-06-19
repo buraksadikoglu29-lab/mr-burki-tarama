@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-06-19T15:43:00",
+  "scored_at": "2026-06-19T18:06:43",
   "pool_refreshed_at": "2026-05-12T06:05:42",
   "pool_size": 67,
   "market_context": {
@@ -9,7 +9,7 @@
     "US": {
       "status": "NO_DATA"
     },
-    "computed_at": "2026-06-19T15:43:00"
+    "computed_at": "2026-06-19T18:06:43"
   },
   "rows": [
     {
@@ -2560,6 +2560,46 @@
       "fresh_breakout": false
     },
     {
+      "symbol": "TRX-USD",
+      "display": "TRX",
+      "asset_type": "CRYPTO",
+      "market": "CRYPTO",
+      "tv_symbol": "BINANCE:TRXUSDT",
+      "last_price": 0.3487289249897003,
+      "pivot_price": 0.3697870075702667,
+      "base_pattern": "cup-handle",
+      "base_length_weeks": 38,
+      "base_depth_pct": 27.48853098160194,
+      "vcp_contractions": 3,
+      "rs_3m_percentile": 26.58730158730159,
+      "rs_6m_percentile": 69.8744769874477,
+      "avg_volume_50d": 664035804.84,
+      "tight_5d_range_pct": 2.6241045837160866,
+      "bb_squeeze_recent": false,
+      "earnings_next_date": null,
+      "atr_20": 0.004833452614410986,
+      "slope_50dma_3m_pct": 13.775022414621315,
+      "score": 34,
+      "breakdown": {
+        "volume": 0,
+        "rs": 0,
+        "base": 15,
+        "trend": 10,
+        "breakout": 5,
+        "momentum": 4
+      },
+      "action": "PASS",
+      "vol_multiplier": 0.74,
+      "today_close": 0.32221516966819763,
+      "today_vol": 489648672.0,
+      "pct_to_pivot": -12.86,
+      "stop": 0.36,
+      "t1": 0.38,
+      "t2": 0.39,
+      "notes": [],
+      "fresh_breakout": false
+    },
+    {
       "symbol": "BTCIM.IS",
       "display": "BTCIM",
       "asset_type": "STOCK_BIST",
@@ -2596,46 +2636,6 @@
       "stop": 6.56,
       "t1": 7.62,
       "t2": 8.14,
-      "notes": [],
-      "fresh_breakout": false
-    },
-    {
-      "symbol": "TRX-USD",
-      "display": "TRX",
-      "asset_type": "CRYPTO",
-      "market": "CRYPTO",
-      "tv_symbol": "BINANCE:TRXUSDT",
-      "last_price": 0.3487289249897003,
-      "pivot_price": 0.3697870075702667,
-      "base_pattern": "cup-handle",
-      "base_length_weeks": 38,
-      "base_depth_pct": 27.48853098160194,
-      "vcp_contractions": 3,
-      "rs_3m_percentile": 26.58730158730159,
-      "rs_6m_percentile": 69.8744769874477,
-      "avg_volume_50d": 664035804.84,
-      "tight_5d_range_pct": 2.6241045837160866,
-      "bb_squeeze_recent": false,
-      "earnings_next_date": null,
-      "atr_20": 0.004833452614410986,
-      "slope_50dma_3m_pct": 13.775022414621315,
-      "score": 29,
-      "breakdown": {
-        "volume": 0,
-        "rs": 0,
-        "base": 15,
-        "trend": 10,
-        "breakout": 0,
-        "momentum": 4
-      },
-      "action": "PASS",
-      "vol_multiplier": 0.73,
-      "today_close": 0.3205302059650421,
-      "today_vol": 482005344.0,
-      "pct_to_pivot": -13.32,
-      "stop": 0.36,
-      "t1": 0.38,
-      "t2": 0.39,
       "notes": [],
       "fresh_breakout": false
     },
