@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-07-03T15:25:22",
+  "scored_at": "2026-07-03T17:47:24",
   "pool_refreshed_at": "2026-05-12T06:05:42",
   "pool_size": 67,
   "market_context": {
@@ -9,7 +9,7 @@
     "US": {
       "status": "NO_DATA"
     },
-    "computed_at": "2026-07-03T15:25:22"
+    "computed_at": "2026-07-03T17:47:24"
   },
   "rows": [
     {
@@ -1532,46 +1532,6 @@
       "fresh_breakout": false
     },
     {
-      "symbol": "AKBNK.IS",
-      "display": "AKBNK",
-      "asset_type": "STOCK_BIST",
-      "market": "BIST",
-      "tv_symbol": "BIST:AKBNK",
-      "last_price": 75.8499984741211,
-      "pivot_price": 90.5963516345988,
-      "base_pattern": "cup-handle",
-      "base_length_weeks": 10,
-      "base_depth_pct": 28.197988243364126,
-      "vcp_contractions": 5,
-      "rs_3m_percentile": 3.723404255319149,
-      "rs_6m_percentile": 4.0,
-      "avg_volume_50d": 114734188.52,
-      "tight_5d_range_pct": 8.239947430101015,
-      "bb_squeeze_recent": true,
-      "earnings_next_date": "2026-07-28",
-      "atr_20": 2.812344805384706,
-      "slope_50dma_3m_pct": 3.1572549829832623,
-      "score": 55,
-      "breakdown": {
-        "volume": 25,
-        "rs": 0,
-        "base": 15,
-        "trend": 10,
-        "breakout": 5,
-        "momentum": 0
-      },
-      "action": "MONITOR",
-      "vol_multiplier": 4.08,
-      "today_close": 73.6500015258789,
-      "today_vol": 467962723.0,
-      "pct_to_pivot": -18.71,
-      "stop": 84.97,
-      "t1": 96.22,
-      "t2": 101.85,
-      "notes": [],
-      "fresh_breakout": false
-    },
-    {
       "symbol": "ARTMS.IS",
       "display": "ARTMS",
       "asset_type": "STOCK_BIST",
@@ -2530,10 +2490,10 @@
         "momentum": 0
       },
       "action": "PASS",
-      "vol_multiplier": 0.7,
-      "today_close": 0.3207344114780426,
-      "today_vol": 462918688.0,
-      "pct_to_pivot": -13.27,
+      "vol_multiplier": 0.68,
+      "today_close": 0.32035043835639954,
+      "today_vol": 453957248.0,
+      "pct_to_pivot": -13.37,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
@@ -2577,6 +2537,46 @@
       "stop": 10.1,
       "t1": 11.4,
       "t2": 12.05,
+      "notes": [],
+      "fresh_breakout": false
+    },
+    {
+      "symbol": "AKBNK.IS",
+      "display": "AKBNK",
+      "asset_type": "STOCK_BIST",
+      "market": "BIST",
+      "tv_symbol": "BIST:AKBNK",
+      "last_price": 75.8499984741211,
+      "pivot_price": 90.5963516345988,
+      "base_pattern": "cup-handle",
+      "base_length_weeks": 10,
+      "base_depth_pct": 28.197988243364126,
+      "vcp_contractions": 5,
+      "rs_3m_percentile": 3.723404255319149,
+      "rs_6m_percentile": 4.0,
+      "avg_volume_50d": 114734188.52,
+      "tight_5d_range_pct": 8.239947430101015,
+      "bb_squeeze_recent": true,
+      "earnings_next_date": "2026-07-28",
+      "atr_20": 2.812344805384706,
+      "slope_50dma_3m_pct": 3.1572549829832623,
+      "score": 25,
+      "breakdown": {
+        "volume": 0,
+        "rs": 0,
+        "base": 15,
+        "trend": 10,
+        "breakout": 0,
+        "momentum": 0
+      },
+      "action": "PASS",
+      "vol_multiplier": 0.99,
+      "today_close": 74.94999694824219,
+      "today_vol": 113445183.0,
+      "pct_to_pivot": -17.27,
+      "stop": 84.97,
+      "t1": 96.22,
+      "t2": 101.85,
       "notes": [],
       "fresh_breakout": false
     },
