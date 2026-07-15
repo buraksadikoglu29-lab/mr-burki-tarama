@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-07-15T08:42:53",
+  "scored_at": "2026-07-15T09:21:02",
   "pool_refreshed_at": "2026-05-12T06:05:42",
   "pool_size": 67,
   "market_context": {
@@ -9,7 +9,7 @@
     "US": {
       "status": "NO_DATA"
     },
-    "computed_at": "2026-07-15T08:42:53"
+    "computed_at": "2026-07-15T09:21:02"
   },
   "rows": [
     {
@@ -681,6 +681,46 @@
       "fresh_breakout": true
     },
     {
+      "symbol": "HG=F",
+      "display": "HG",
+      "asset_type": "FUTURE",
+      "market": "FUTURE",
+      "tv_symbol": "COMEX:HG",
+      "last_price": 6.500500202178955,
+      "pivot_price": 6.507999897003174,
+      "base_pattern": "asc-triangle",
+      "base_length_weeks": 14,
+      "base_depth_pct": 19.94468161337723,
+      "vcp_contractions": 2,
+      "rs_3m_percentile": 38.82978723404255,
+      "rs_6m_percentile": 65.60000000000001,
+      "avg_volume_50d": 1775.76,
+      "tight_5d_range_pct": 8.568573846526146,
+      "bb_squeeze_recent": true,
+      "earnings_next_date": null,
+      "atr_20": 0.11802484743870517,
+      "slope_50dma_3m_pct": 3.0911726570493263,
+      "score": 63,
+      "breakdown": {
+        "volume": 25,
+        "rs": 0,
+        "base": 7,
+        "trend": 10,
+        "breakout": 15,
+        "momentum": 6
+      },
+      "action": "MONITOR",
+      "vol_multiplier": 62.13,
+      "today_close": 6.389999866485596,
+      "today_vol": 110336.0,
+      "pct_to_pivot": -1.81,
+      "stop": 6.27,
+      "t1": 6.74,
+      "t2": 6.98,
+      "notes": [],
+      "fresh_breakout": false
+    },
+    {
       "symbol": "USB",
       "display": "USB",
       "asset_type": "STOCK_US",
@@ -1051,46 +1091,6 @@
         "FRESH"
       ],
       "fresh_breakout": true
-    },
-    {
-      "symbol": "HG=F",
-      "display": "HG",
-      "asset_type": "FUTURE",
-      "market": "FUTURE",
-      "tv_symbol": "COMEX:HG",
-      "last_price": 6.500500202178955,
-      "pivot_price": 6.507999897003174,
-      "base_pattern": "asc-triangle",
-      "base_length_weeks": 14,
-      "base_depth_pct": 19.94468161337723,
-      "vcp_contractions": 2,
-      "rs_3m_percentile": 38.82978723404255,
-      "rs_6m_percentile": 65.60000000000001,
-      "avg_volume_50d": 1775.76,
-      "tight_5d_range_pct": 8.568573846526146,
-      "bb_squeeze_recent": true,
-      "earnings_next_date": null,
-      "atr_20": 0.11802484743870517,
-      "slope_50dma_3m_pct": 3.0911726570493263,
-      "score": 58,
-      "breakdown": {
-        "volume": 25,
-        "rs": 0,
-        "base": 7,
-        "trend": 10,
-        "breakout": 10,
-        "momentum": 6
-      },
-      "action": "MONITOR",
-      "vol_multiplier": 61.8,
-      "today_close": 6.380000114440918,
-      "today_vol": 109737.0,
-      "pct_to_pivot": -1.97,
-      "stop": 6.27,
-      "t1": 6.74,
-      "t2": 6.98,
-      "notes": [],
-      "fresh_breakout": false
     },
     {
       "symbol": "KCHOL.IS",
@@ -2461,9 +2461,9 @@
       },
       "action": "PASS",
       "vol_multiplier": 0.5,
-      "today_close": 0.3272181451320648,
-      "today_vol": 330822976.0,
-      "pct_to_pivot": -11.51,
+      "today_close": 0.3278358280658722,
+      "today_vol": 332162368.0,
+      "pct_to_pivot": -11.34,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
