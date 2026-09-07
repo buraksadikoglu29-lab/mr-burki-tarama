@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-09-07T18:43:53",
+  "scored_at": "2026-09-07T22:01:02",
   "pool_refreshed_at": "2026-05-12T06:05:42",
   "pool_size": 67,
   "market_context": {
@@ -9,7 +9,7 @@
     "US": {
       "status": "NO_DATA"
     },
-    "computed_at": "2026-09-07T18:43:53"
+    "computed_at": "2026-09-07T22:01:02"
   },
   "rows": [
     {
@@ -2607,9 +2607,9 @@
       },
       "action": "PASS",
       "vol_multiplier": 0.66,
-      "today_close": 0.334525465965271,
-      "today_vol": 438557888.0,
-      "pct_to_pivot": -9.54,
+      "today_close": 0.33466148376464844,
+      "today_vol": 437050080.0,
+      "pct_to_pivot": -9.5,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
