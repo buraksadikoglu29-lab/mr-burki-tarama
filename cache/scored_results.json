@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-10-29T13:31:27",
+  "scored_at": "2026-10-29T14:16:49",
   "pool_refreshed_at": "2026-05-12T06:05:42",
   "pool_size": 67,
   "market_context": {
@@ -9,7 +9,7 @@
     "US": {
       "status": "NO_DATA"
     },
-    "computed_at": "2026-10-29T13:31:27"
+    "computed_at": "2026-10-29T14:16:49"
   },
   "rows": [
     {
@@ -562,10 +562,10 @@
         "momentum": 0
       },
       "action": "MONITOR",
-      "vol_multiplier": 73.01,
-      "today_close": 6.5894999504089355,
-      "today_vol": 129655.0,
-      "pct_to_pivot": 1.25,
+      "vol_multiplier": 76.27,
+      "today_close": 6.558000087738037,
+      "today_vol": 135440.0,
+      "pct_to_pivot": 0.77,
       "stop": 6.27,
       "t1": 6.74,
       "t2": 6.98,
@@ -1804,10 +1804,10 @@
         "momentum": 0
       },
       "action": "PASS",
-      "vol_multiplier": 0.62,
-      "today_close": 0.3312821388244629,
-      "today_vol": 410713664.0,
-      "pct_to_pivot": -10.41,
+      "vol_multiplier": 0.63,
+      "today_close": 0.33104604482650757,
+      "today_vol": 421536864.0,
+      "pct_to_pivot": -10.48,
       "stop": 0.36,
       "t1": 0.38,
       "t2": 0.39,
